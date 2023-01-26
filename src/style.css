@@ -155,12 +155,16 @@ nav {
   }
 
   .res-cards {
-    height: 250px;
-    width: 200px;
+    height: 90%;
+    width: 90%;
   }
 
   .res-img {
     width: 100%;
     border-radius: 0.2rem;
+  }
+
+  #search-inp > input {
+    width: 90%;
   }
 }
