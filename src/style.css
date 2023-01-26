@@ -152,6 +152,7 @@ nav {
     grid-column-gap: 0;
     grid-row-gap: 2rem;
     width: 100%;
+    margin-top: 0rem;
   }
 
   .res-cards {
