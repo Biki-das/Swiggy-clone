@@ -1,14 +1,9 @@
 let restaurantsElm = document.querySelector("#root");
 let restaurants = [];
 let resLists = "";
+let searchTerm = "";
 let searchInput = document.querySelector("#search");
 let sortInput = document.querySelector("#sort");
-
-let searchTerm = "";
-let searchErrorText = document.createElement("h1");
-searchErrorText.textContent = "OOPS! no restuarant found❌🥘";
-searchErrorText.classList.add("search-error");
-restaurantsElm.appendChild(searchErrorText);
 
 async function getRestuarants() {
   let res = await fetch("./Data.json");
@@ -103,8 +98,8 @@ function listRestuants(object) {
       });
 
       ratingList.sort(function (a, b) {
-        var aa = Number(a.children[0].children[3].childNodes[0].textContent);
-        var bb = Number(b.children[0].children[3].childNodes[0].textContent);
+        let aa = Number(a.children[0].children[3].childNodes[0].textContent);
+        let bb = Number(b.children[0].children[3].childNodes[0].textContent);
         return aa - bb;
       });
 
@@ -119,10 +114,10 @@ function listRestuants(object) {
       });
 
       timeList.sort(function (a, b) {
-        var aa = Number(
+        let aa = Number(
           a.children[0].children[3].children[1].textContent.substr(0, 2)
         );
-        var bb = Number(
+        let bb = Number(
           b.children[0].children[3].children[1].textContent.substr(0, 2)
         );
         return bb - aa;
