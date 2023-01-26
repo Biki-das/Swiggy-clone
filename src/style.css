@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+input:focus {
+  outline: none;
+}
+
+nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#nav-img {
+  width: 300px;
+  height: 300px;
+}
+
+#root {
+  width: 90%;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  place-items: center;
+}
+
+.res-cards {
+  height: 300px;
+  width: 300px;
+  border: 0.8px solid transparent;
+  transition: border 0.3s linear;
+  cursor: pointer;
+}
+
+.res-cards.hide {
+  display: none;
+}
+
+.res-cards:hover {
+  border: 0.8px solid gray;
+}
+
+.res-cards > .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.res-img {
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+}
+
+.res-name {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.res-info {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating {
+  width: 60px;
+  height: 30px;
+  background-color: orange;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-star-img {
+  width: 20px;
+  height: 20px;
+}
+
+.rating p {
+  font-weight: bold;
+  color: white;
+}
+
+#search-inp {
+  display: flex;
+  justify-content: center;
+}
+
+#search-inp > input {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+#sort-div {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 50%;
+}
+
+.search-error {
+  display: none;
+  text-align: center;
+}
+
+.search-error.show {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  #root {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  #root {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 2rem;
+  }
+
+  .res-cards {
+    height: 250px;
+    width: 200px;
+  }
+
+  .res-img {
+    width: 100%;
+    border-radius: 0.2rem;
+  }
+}
