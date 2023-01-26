@@ -1,21 +1,21 @@
 [
   {
     "restuarantName": "Hotel empire",
-    "Tags": ["North Indian,kebabs,Biryani"],
+    "Tags": ["NorthIndian ,kebabs, Biryani"],
     "rating": 4.2,
     "ETA": 30,
     "restuarantImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/r4mw2xp0djz0pscwmiop"
   },
   {
     "restuarantName": "Al-bek",
-    "Tags": ["Arabian,Tandoor,Biryani"],
+    "Tags": ["Arabian, Tandoor, Biryani"],
     "rating": 3.9,
     "ETA": 29,
     "restuarantImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/teg1rujhfwroaoig95qs"
   },
   {
     "restuarantName": "The Fatty Bao",
-    "Tags": ["Asian,Japanese,Chinese"],
+    "Tags": ["Asian, Japanese, Chinese"],
     "rating": 4.3,
     "ETA": 40,
     "restuarantImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pmhtkcd6vcyjokvhlszc"
@@ -43,7 +43,7 @@
   },
   {
     "restuarantName": "McDonald's",
-    "Tags": ["Burgers,Beverages,Cafe,Desserts"],
+    "Tags": ["Burgers, Beverages, Cafe, Desserts"],
     "rating": 4.3,
     "ETA": 24,
     "restuarantImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/0e8f93a56b93e43d7627c2c21bc1106c"
@@ -57,7 +57,7 @@
   },
   {
     "restuarantName": "Tibetan Mother's Kitchen",
-    "Tags": ["Chinese,Tibetan,Thai"],
+    "Tags": ["Chinese, Tibetan, Thai"],
     "rating": 4.1,
     "ETA": 38,
     "restuarantImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sy8v26zs74aw7naegbpt"
@@ -71,7 +71,7 @@
   },
   {
     "restuarantName": "Chung Wah",
-    "Tags": ["Chinese,Thai,Asian,Pan-Asian,Seafood"],
+    "Tags": ["Chinese, Thai, Asian, Pan-Asian, Seafood"],
     "rating": 4.2,
     "ETA": 34,
     "restuarantImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/r8x1jwtgjiywlqikt8k0"
@@ -106,7 +106,7 @@
   },
   {
     "restuarantName": "New Taj Biryani",
-    "Tags": ["Biryani,Indian,Seafood,Chinese"],
+    "Tags": ["Biryani, Indian, Seafood, Chinese"],
     "rating": 4.4,
     "ETA": 33,
     "restuarantImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/nfieyqgxk1omknxfbluj"
