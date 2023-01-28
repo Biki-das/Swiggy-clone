@@ -4,7 +4,7 @@ let resLists = "";
 let searchTerm = "";
 let searchInput = document.querySelector("#search");
 let sortInput = document.querySelector("#sort");
-
+// <img src="https://img.icons8.com/ios-glyphs/30/null/hearts.png"/>
 async function getRestuarants() {
   let res = await fetch("./Data.json");
   let data = await res.json();
@@ -27,6 +27,10 @@ function listRestuants(object) {
     let resName = document.createElement("h2");
     resName.classList.add("res-name");
     resName.textContent = res.restuarantName;
+
+    let resStar = document.createElement("img");
+    resStar.src = "../Assests/star.svg";
+    resStar.classList.add("rating-star-img");
 
     let tagDiv = document.createElement("div");
     tagDiv.classList.add("tags");
@@ -63,6 +67,7 @@ function listRestuants(object) {
     });
 
     ratingDiv.appendChild(ratingText);
+    ratingDiv.appendChild(resStar);
     resLists = document.querySelectorAll(".res-cards");
   });
 
@@ -72,7 +77,13 @@ function listRestuants(object) {
     searchTerm = e.target.value.toLowerCase().replace(/ /g, "");
     resLists.forEach((resList) => {
       let resNames = resList.children[0].children[1].textContent;
+      let resTags = resList.children[0].children[2].textContent;
       if (resNames.toLowerCase().replace(/ /g, "").includes(searchTerm)) {
+        resList.classList.remove("hide");
+      } else {
+        resList.classList.add("hide");
+      }
+      if (resTags.toLowerCase().replace(/ /g, "").includes(searchTerm)) {
         resList.classList.remove("hide");
       } else {
         resList.classList.add("hide");
