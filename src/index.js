@@ -83,11 +83,6 @@ function listRestuants(object) {
       } else {
         resList.classList.add("hide");
       }
-      if (resTags.toLowerCase().replace(/ /g, "").includes(searchTerm)) {
-        resList.classList.remove("hide");
-      } else {
-        resList.classList.add("hide");
-      }
     });
   });
 
